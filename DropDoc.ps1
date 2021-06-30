@@ -48,7 +48,7 @@ Function InstallationChecks{
     
     Else
     {
-        Write-Host "[+] It's the first time you've run this project" -ForegroundColor Green
+        Write-Host "[+] It's the first time you've running this project" -ForegroundColor Green
         Write-Host "[+] Please compile the GadgetToJScript solution from the ""Third Party Projects"" folder." -ForegroundColor Green
 
     }
